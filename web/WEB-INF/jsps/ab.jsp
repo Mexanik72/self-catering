@@ -1,12 +1,11 @@
-<%@ page import="org.apache.tomcat.util.buf.StringCache" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib tagdir="/WEB-INF/tags/page" prefix="page" %>
 
 <%
     int number = 1; %>
-<html>
-<body>HEELO REVERS JSP
+<page:header/>
+HEELO REVERS JSP
 ${requestScope.nick}
 <%=number%>
 
-</body>
-</html>
+<page:footer/>
